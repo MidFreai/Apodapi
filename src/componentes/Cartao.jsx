@@ -5,17 +5,17 @@ function Cartao() {
     const [titulo, setTitulo] = useState("Buscando no espaço...");
     const [urlFoto, setUrlFoto] = useState("");
 
-    fetch('https://api.nasa.gov/planetary/apod?api_key=1iXOrAlworQpzLt8lVEh9REjxDw3FkFZAjMyE9oU')
-        .then(response => response.json())
-        .then(data => {
-            setTitulo(data.title);
-            setUrlFoto(data.url);
-        })
-        .catch(error => {
-            console.error("Erro ao buscar a API:", error);
-            setTitulo("Erro ao carregar a comunicação espacial.");
-        });
     useEffect(() => {
+        fetch('https://api.nasa.gov/planetary/apod?api_key=1iXOrAlworQpzLt8lVEh9REjxDw3FkFZAjMyE9oU')
+            .then(response => response.json())
+            .then(data => {
+                setTitulo(data.title);
+                setUrlFoto(data.url);
+            })
+            .catch(error => {
+                console.error("Erro ao buscar a API:", error);
+                setTitulo("Erro ao carregar a comunicação espacial.");
+            });
     });
 
     return (
