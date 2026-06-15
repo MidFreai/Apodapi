@@ -1,0 +1,13 @@
+header {
+    text-Align: center;
+    padding: 10px;
+    background-Color: #4b4b4b;
+    color: white;
+    border-radius: 10px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+}

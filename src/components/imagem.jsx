@@ -4,7 +4,7 @@ export default function Imagem({src, alt}){
             className="imagem"
             src={ src } 
             alt={ alt } 
-            style={{ width: "40vw", height: "100%", marginBottom: "15px" }}
+            style={{ width: "80%", height: "80%", marginBottom: "15px",marginTop: "15px", }}
         />
     )
 }
