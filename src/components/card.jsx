@@ -2,7 +2,7 @@ import Imagem from "./imagem.jsx"
 import Info from "./info.jsx"
 
 
-export default function Card({src="", nome="",dia="", descricao="", estilo={
+export default function Card({src="", nome="", key="", descricao="", estilo={
     backgroundColor: "#fff", 
     borderRadius: "12px",
     margin: " 5px ", 
@@ -18,7 +18,7 @@ export default function Card({src="", nome="",dia="", descricao="", estilo={
         <div className="card" style={{ ...estilo }}>
 
         <Imagem src={ src } alt={ nome }/>
-        <Info nome={ nome } descricao={descricao} />
+        <Info nome={ nome } descricao={ descricao } />
 
       </div>
     )
