@@ -8,7 +8,7 @@ export default function PainelCards(){
     const [Info, setInfo] = useState([]);
 
     useEffect(() => {
-        SearchApi()
+        SearchApi("2026-06-11")
             .then(data => { setInfo(data); })
             .catch(error => { console.error(error); });
     }, []);
