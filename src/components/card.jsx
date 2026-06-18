@@ -12,7 +12,6 @@ export default function Card({src="", nome="", key="", descricao="", estilo={
     alignItems: "center",
     border: "2px solid #5f5f5fa2",
     width:"440px ",
-    
 }}){
     return(
         <div className="card" style={{ ...estilo }}>

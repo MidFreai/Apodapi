@@ -3,7 +3,7 @@ import './App.css'
 
 import PainelCards from "./components/PainelCards.jsx";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <header >
@@ -14,5 +14,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
