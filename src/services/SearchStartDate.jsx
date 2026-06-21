@@ -1,7 +1,7 @@
+import SearchApi from "./SearchApi.js";
+
 export default async function SearchStartDate({ start_date }){
-    const response = await fetch(
-        "https://api.nasa.gov/planetary/apod?api_key=1iXOrAlworQpzLt8lVEh9REjxDw3FkFZAjMyE9oU&start_date="+{ start_date }
-    );
+    const response = await SearchApi({ start_date });
 
     const [Info, setInfo] = useState([]);
 
